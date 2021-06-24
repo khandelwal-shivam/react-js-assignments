@@ -1,0 +1,25 @@
+.song-list,
+.txt-blue {
+  color: blue;
+}
+
+.playlist,
+.playlist tr,
+.playlist th,
+.playlist td {
+  border: 1px solid black;
+  padding: 0.25rem;
+}
+
+.playlist th,
+.playlist td {
+  min-width: 10rem;
+}
+
+.input-group {
+  margin: 0.5rem 0;
+}
+
+.input-group *:nth-child(2) {
+  margin: 0 0.5rem;
+}
