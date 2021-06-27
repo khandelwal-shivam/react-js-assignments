@@ -1,0 +1,42 @@
+.song-form {
+  display: flex;
+  justify-content: center;
+}
+
+.form,
+.input-group {
+  position: relative;
+}
+.input-group:not(.validation-error) {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.validation-error {
+  color: red;
+  position: absolute;
+  left: 500px;
+}
+.input-group input {
+  width: 20rem;
+  padding: 0.5rem;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+}
+.song-form .submit-btn {
+  background-color: gray;
+  position: absolute;
+  left: 50%;
+  margin-top: 3rem;
+  width: 10rem;
+  height: 3rem;
+}
+
+.song-form .btn:hover {
+  opacity: 0.75;
+}
