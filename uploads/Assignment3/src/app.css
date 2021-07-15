@@ -1,0 +1,63 @@
+/* Default CSS*/
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+}
+
+/* Utilities */
+.txt-red {
+  color: red;
+}
+
+.txt-blue {
+  color: blue;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-info {
+  color: blue;
+}
+.btn {
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  font-weight: bolder;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.jc-se {
+  justify-content: space-evenly;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}

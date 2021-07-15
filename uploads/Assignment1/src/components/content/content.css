@@ -1,0 +1,147 @@
+/* Actual CSS
+body {
+  background: linear-gradient(#2196f3 65%, #1d3548);
+}
+main {
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content * {
+  margin-top: 1rem;
+}
+
+.img-container {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.img-container img {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-container {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn-increment {
+  background-color: greenyellow;
+}
+
+.btn-decrement {
+  background-color: rosybrown;
+}
+.btn-counter {
+  font-size: 1.25rem;
+  padding: 1rem;
+  width: 8rem;
+  height: 3rem;
+  overflow: hidden;
+}
+
+.btn-counter:hover {
+  font-weight: bolder;
+}
+
+.result {
+  width: 100%;
+  text-align: center;
+  margin: 1rem;
+  font-size: 2rem;
+}
+*/
+
+body {
+  background: linear-gradient(#21f32c 57%, #0d5a99);
+}
+
+body {
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content * {
+  margin-top: 0.5rem;
+}
+
+/* Flex Item1*/
+.img-container {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.img-container img {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Flex Item2*/
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn-increment {
+  background-color: greenyellow;
+}
+
+.btn-decrement {
+  background-color: rosybrown;
+}
+.btn-counter {
+  font-size: 1.25rem;
+  padding: 1rem;
+  width: 8rem;
+  height: 3rem;
+  overflow: hidden;
+}
+
+.btn-counter:hover {
+  font-weight: bolder;
+}
+
+/* Flex Item3 */
+.result {
+  width: 100%;
+  text-align: center;
+  margin: 1rem;
+  font-size: 2rem;
+}

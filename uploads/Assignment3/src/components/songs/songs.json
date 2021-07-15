@@ -1,0 +1,32 @@
+{
+  "songs": [
+    {
+      "id": 1,
+      "movie": "Anurodh",
+      "title": "Jab Dard Nahi Tha",
+      "length": "04:50",
+      "singer": "Kishore"
+    },
+    {
+      "id": 2,
+      "movie": "Kabhi Kabhi",
+      "title": "Me Pal Do Pal",
+      "length": "03:45",
+      "singer": "Mukesh"
+    },
+    {
+      "id": 3,
+      "movie": "Aradhana",
+      "title": "Aaj Tujhko",
+      "length": "04:45",
+      "singer": "Rafi"
+    },
+    {
+      "id": 4,
+      "movie": "Mungaru Male",
+      "title": "Anisuthidhe",
+      "length": "05:45",
+      "singer": "Sonu Nigam"
+    }
+  ]
+}
