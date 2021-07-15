@@ -1,0 +1,23 @@
+.song-list h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.playlist,
+.playlist tr,
+.playlist th,
+.playlist td {
+  border: 1px solid black;
+  padding: 0.25rem;
+  border-spacing: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.playlist tr:nth-child(even) {
+  background-color: gray;
+}
+.playlist th,
+.playlist td {
+  min-width: 10rem;
+}
