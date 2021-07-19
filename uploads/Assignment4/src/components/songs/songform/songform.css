@@ -1,0 +1,97 @@
+/*.song-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
+/*
+.input-group {
+  position: relative;
+}
+
+.input-group:not(.validation-error) {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.validation-error {
+  color: red;
+  position: absolute;
+  left: 500px;
+}
+.input-group input {
+  width: 20rem;
+  padding: 0.5rem;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+}
+.song-form .submit-btn {
+  background-color: gray;
+  position: absolute;
+  left: 50%;
+  margin-top: 3rem;
+  width: 10rem;
+  height: 3rem;
+}
+
+.song-form .btn:hover {
+  opacity: 0.75;
+}
+*/
+
+.song-form {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.form {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.input-group {
+  position: relative;
+}
+.input-group:not(.validation-error) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.input-group label {
+  width: 10rem;
+  text-align: center;
+}
+.input-group input {
+  width: 20rem;
+  height: 2rem;
+  padding: 0 1rem;
+}
+
+.validation-error {
+  position: absolute;
+  color: red;
+  left: 500px;
+  padding-left: 2rem;
+  height: 2rem;
+}
+
+.song-form .submit-btn {
+  background-color: gray;
+  margin: 2rem 0;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 20px;
+  font-size: 1rem;
+}

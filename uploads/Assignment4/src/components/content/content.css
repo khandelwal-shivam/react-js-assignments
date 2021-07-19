@@ -1,0 +1,24 @@
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  margin: 1rem;
+}
+
+.menu {
+  margin: 1rem;
+}
+
+.menu h2 {
+  display: inline-block;
+  padding: 0 2rem;
+}
+
+.route-container {
+  position: relative;
+}

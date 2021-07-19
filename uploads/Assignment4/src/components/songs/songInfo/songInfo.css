@@ -1,0 +1,32 @@
+.song-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table,
+table tr,
+table th,
+table td {
+  border: 1px solid black;
+  padding: 0.25rem;
+  border-spacing: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+table th,
+table td {
+  min-width: 10rem;
+}
+
+.back-btn {
+  margin-top: 2rem;
+  background-color: gray;
+  padding: 0.5rem;
+  width: 10rem;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
