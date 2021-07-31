@@ -1,0 +1,11 @@
+Test Suite 1
+1. SnapShot Testing for SongList using Mount
+2. Check if correct h1 heading rendered 
+3. App check if SongList Component is rendered 
+
+Test Suite 2
+1. Title is second column heading in SongList 
+2. Singer is fourth column heading in SongList
+3. 2nd song name passed as props match with SongList Component as 2nd songName when rendered.
+4. When SongList Array passed as props then Second Song's SongLength matches with Second Song Component's song Length when rendered
+5. When Null Array pass as SongList's props then it must not crash and no song component is rendered  
