@@ -5,7 +5,7 @@ const Header = (props) => {
     <header className="flex">
       <div className="title">
         <h1 className="txt-red">
-          FED React : Assigment4 : Router Transition, Flux Pattern, Formik, Yup{" "}
+          FED React : Assigment4 : Router Transition,Flux Pattern ,Formik, Yup
         </h1>
         <hr />
       </div>

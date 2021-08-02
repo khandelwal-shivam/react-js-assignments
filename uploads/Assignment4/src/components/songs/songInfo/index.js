@@ -19,7 +19,7 @@ const SongInfo = (props) => {
 
   useEffect(() => {
     fetchSongs(id);
-  }, []);
+  }, [id]);
 
   return (
     <Fragment>

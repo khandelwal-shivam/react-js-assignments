@@ -1,34 +1,26 @@
-import { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
 import "./songlist.css";
-
-const SongList = (props) => {
+import { useSelector,useDispatch } from "react-redux";
+import { useState, useEffect } from "react";
+import { fetchSongs } from "../../../Redux/Actions";
+import { useHistory } from "react-router-dom";
+const SongList = () => {
+  // const [songData, setSongData] = useState([]);
+  const songData =  useSelector(state=>state.songs.songList);
+  const dispatch = useDispatch();
   const history = useHistory();
-
-  const [songData, setSongData] = useState([]);
-
-  const fetchSongs = async () => {
-    const response = await fetch(`http://localhost:30001/songlist`);
-    const data = await response.json();
-    setSongData(data);
-  };
+  // const fetchSongs = async () => {
+  //   const response = await fetch("http://localhost:30001/songs");
+  //   const data = await response.json();
+  //   setSongData(data);
+  // };
 
   useEffect(() => {
-    fetchSongs();
-  }, []);
-
-  const ViewSong = (id) => {
-    let resp = window.confirm(
-      "Are you sure that you want to view the details?"
-    );
-    if (resp) {
-      history.push(`/songs/${id}`);
-    }
-  };
+    dispatch(fetchSongs());
+  }, [dispatch]);
 
   return (
     <section className="song-list">
-      <h2>Songs List</h2>
+      <h2>Song List</h2>
       <table className="playlist">
         <thead>
           <tr>
@@ -39,16 +31,10 @@ const SongList = (props) => {
           </tr>
         </thead>
         <tbody>
-          {songData.map((element, index) => {
+          {songData && songData.map((element, index) => {
             return (
               <tr key={index}>
-                <td
-                  onClick={() => {
-                    ViewSong(element.id);
-                  }}
-                >
-                  {element.movie}
-                </td>
+                <td>{element.movie}</td>
                 <td>{element.title}</td>
                 <td>{element.length}</td>
                 <td>{element.singer}</td>
@@ -57,19 +43,10 @@ const SongList = (props) => {
           })}
         </tbody>
       </table>
-      <div className="btn-section">
-        <button
-          className="btn"
-          id="add-btn"
-          onClick={() => {
-            history.push("/songs/addsong");
-          }}
-        >
-          Add Song
-        </button>
-      </div>
+      <button className = "addSong"
+       onClick = {()=>{history.push('/songs/addsong')}}
+      >Add Songs</button>
     </section>
   );
 };
-
 export default SongList;

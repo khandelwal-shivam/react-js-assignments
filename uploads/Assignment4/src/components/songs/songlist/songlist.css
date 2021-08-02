@@ -3,10 +3,6 @@
   margin-bottom: 1rem;
 }
 
-.playlist tr td:nth-child(1) {
-  cursor: pointer;
-}
-
 .playlist,
 .playlist tr,
 .playlist th,
@@ -25,30 +21,10 @@
 .playlist td {
   min-width: 10rem;
 }
-
-.input-group {
-  margin: 0.5rem 0;
-}
-
-.input-group *:nth-child(2) {
-  margin: 0 0.5rem;
-}
-
-.btn-section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-#add-btn {
-  border: 1px solid green;
-  border-radius: 10px;
-  margin-top: 4rem;
-  padding: 0.75em;
-  font-size: 1.25rem;
-}
-
-#add-btn:hover {
-  border-color: transparent;
-  background: green;
-  color: white;
+.addSong{
+  color : blue;
+  width:100px;
+  padding:10px;
+  margin: 10px;
+  font-weight:600;
 }
